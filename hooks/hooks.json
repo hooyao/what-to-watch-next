@@ -1,0 +1,17 @@
+{
+  "description": "Optional: injects the user's What To Watch Next taste profile at session start so recommendations stay personalized. Requires Node.js; read-only. Remove this directory to run the plugin with zero runtime dependencies.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/inject-profile.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

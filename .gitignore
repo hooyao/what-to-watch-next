@@ -1,0 +1,12 @@
+# Local test MCP config — may contain real API keys; not part of the distributable plugin
+.mcp.json
+
+# Local taste-profile data created while testing
+.what-to-watch-next/
+
+# User-local settings
+.claude/*.local.md
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
